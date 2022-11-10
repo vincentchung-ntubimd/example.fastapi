@@ -1,7 +1,7 @@
 from sqlalchemy import TIMESTAMP, Column, Integer, Boolean, String, text, ForeignKey
 from sqlalchemy.sql.expression import null
 from sqlalchemy.orm import relationship
-from database import Base
+from app.database import Base
 
 class ORM_Post(Base):
     __tablename__ = 'orm_posts'
