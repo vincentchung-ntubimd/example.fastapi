@@ -4,7 +4,7 @@ from .. import models, schemas, oauth2
 from fastapi import Body, Response, status, HTTPException, Depends, APIRouter
 from sqlalchemy.orm import Session
 from sqlalchemy import func
-from database import SessionLocal, engine, get_db
+from ..database import SessionLocal, engine, get_db
 from typing import List, Optional
 
 router = APIRouter(prefix="/posts", tags=['Posts'])
